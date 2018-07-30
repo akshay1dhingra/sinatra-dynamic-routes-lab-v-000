@@ -38,6 +38,12 @@ class App < Sinatra::Base
       answer = number1 + number2
     elsif operation == "subtract"
       answer = number1 - number2
+    elsif operation == "multiply"
+      answer = number1 * number2 
+    elsif operation == "divide"
+      answer = number1 / number2 
+    else 
+      answer = "Does. Not. Compute."
     end
     answer.to_s
   end
